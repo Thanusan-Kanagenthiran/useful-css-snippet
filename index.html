@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Media Icons</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            body {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                background: linear-gradient(to bottom, #00CC99, #6600FF);
+                position: relative;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .fab {
+                background-color: transparent;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -222px;
+            }
+
+            .profile-image {
+                width: 6rem;
+                position: absolute;
+                top: calc(50% - 3rem);
+                left: calc(50% - 3rem);
+                z-index: 1;
+
+            }
+
+            .profile-image img {
+                width: 100%;
+                border-radius: 50%;
+                margin-left: calc(60px - 2.5rem);
+                box-shadow: rgb(255, 255, 255) 0px 6px 24px 0px, rgb(255, 255, 255) 0px 0px 0px 1px;
+            }
+
+            ul li {
+                background: #fff;
+                width: 2.5rem;
+                height: 2.5rem;
+                position: absolute;
+                transform-origin: 150px;
+                transform: rotate(calc(360deg / 8 * var(--i)));
+                font-size: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.5rem;
+                padding: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="profile-image">
+            <img src="./profile.jpg" alt="">
+        </div>
+        <ul>
+            <li style="--i:1;"><a href="https://www.facebook.com/thanusan.kanagenthiran/" target="_blank">
+                    <i class="fab fa-facebook" style="color: #3b5998;"></i></a></li>
+            <li style="--i:2;"><a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter" style="color: #1da1f2;"></i></a></li>
+            <li style="--i:3;"><a href="https://www.instagram.com/thanusan.kanagenthiran/" target="_blank">
+                    <i class="fab fa-instagram" style="color: #c13584;"></i></a></li>
+            <li style="--i:4;"><a href="https://your-portfolio-link.com" target="_blank">
+                    <i class="fas fa-globe" style="color: #007bff;"></i></a></li>
+            <li style="--i:5;"><a href="https://www.youtube.com/@thanusankanagenthiran/" target="_blank">
+                    <i class="fab fa-youtube" style="color: #ff0000;"></i></a></li>
+            <li style="--i:6;"><a href="https://github.com/Thanusan-Kanagenthiran" target="_blank">
+                    <i class="fab fa-github" style="color: #181717;"></i></a></li>
+            <li style="--i:7;"><a href="https://www.linkedin.com/in/thanusan-kanagenthiran" target="_blank">
+                    <i class="fab fa-linkedin" style="color: #0077b5;"></i></a></li>
+            <li style="--i:8;"><a href="https://wa.me/+94772433010" target="_blank">
+                    <i class="fab fa-whatsapp" style="color: #25d366;"></i></a></li>
+        </ul>
+
+    </body>
+
+</html>
